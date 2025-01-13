@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="h-20 w-full bg-blue-600 flex flex-row gap-5"> 
+    <div class="text-xl font-medium ml-9 mt-6" id="loggedUserFullName">fullmame :</div>
+    <div class="text-xl font-medium ml-9 mt-6" id="loggedUserEmail">email : </div>
+    <div class="text-xl font-medium ml-9 mt-6" id="loggedUserPassword">password :</div>
+    
+    <button onclick="logout()" class="text-xl font-medium h-[40px] w-[200px] mt-5 bg-white text-black hover:bg-blue-900  duration-300 rounded-xl ml-[530px]">Logout</button>
+  </nav>
+  <h1 class="text-5xl font-semibold text-center mt-4 ">Welcome To The HomePage!!</h1>
+
+    
+    <h3 class="text-lg font-bold text-center text-gray-800 mb-4">Danger Zone</h3>
+    <button onclick="deleteAccount()" class="w-full bg-red-500 text-white py-2 rounded-lg text-lg font-semibold transition duration-200 hover:bg-red-600 focus:outline-none focus:ring-4 focus:ring-red-300">
+      Delete Account
+    </button>
+    <hr class="h-1 w-[95%] mt-14 m-auto bg-slate-700  shadow-2xl"></hr>
+
+    <h1 class="text-5xl ml-16 mt-9 font-normal">Create your blogs here ...!!</h1>
+    <div class="flex gap-4 flex-row">
+    <input id="blogInput" class="h-[60px] text-2xl text-white rounded-lg bg-slate-400 hover:bg-slate-800 ml-28 mt-14 placeholder:text-xl placeholder:pl-10 placeholder:text-black  placeholder:hover:text-white duration-200 w-[600px]" placeholder="enter message/advice/experience" type="text" id="text"><br>
+    <button onclick="createBlog()" class="text-xl h-[50px] w-[210px] mt-[60px] bg-yellow-400 rounded-md ml-[]">Create Blog</button>
+    </div>
+    <div class="flex flex-row gap-3 ml-[110px]">
+      <p class="text-xl mt-3">public/private</p>
+    <input id="blogInput" class="h-[20px] w-[30px] mt-4" placeholder="public/private" type="checkbox">
+    </div>
+
+    <ul id="listbox" class="list-none space-y-3 text-lg">
+
+    </ul>
+
+
+</body>
+<script type="module" src="dashboard index.js"></script>
+</html>
